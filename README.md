@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/portrait.svg"
-       alt="Ibrahim Gul Butt, rendered as ASCII art" width="430">
+       alt="Ibrahim Gul Butt, rendered as ASCII art" width="400">
 </p>
 
 I ship across the whole stack, and I mean the whole thing: a PAM module in Rust that

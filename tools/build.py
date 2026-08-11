@@ -277,9 +277,11 @@ def portrait():
     ]
     for i, row in enumerate(art):
         # negative, staggered delays put each line at a different phase, so the
-        # crest travels down the portrait instead of every line moving together
+        # crest travels down the portrait instead of every line moving together.
+        # One full wavelength spans the art, whatever its row count.
         p.append(f'<text class="r" xml:space="preserve" x="{padx}" '
-                 f'y="{pady + fs + i * lh:g}" style="animation-delay:-{i * 0.075:.3f}s">'
+                 f'y="{pady + fs + i * lh:g}" '
+                 f'style="animation-delay:-{i * dur / len(art):.3f}s">'
                  f'{esc(row)}</text>')
     p.append("</svg>")
     return "\n".join(p)
