@@ -1,65 +1,33 @@
 
 
-
-
-                                         .
-                                  :~=+=~=+=;`
-                                ;=rrrr*r++r+;`
-                               =r+r***?*??*+~`
-                               =;;~~;~*x?=.;~;
-                               +~~+;..+n~ :?=:``;:
-                              :*?r+rrr*u*.:rnnnx=.             ..   ...
-                              :+nwx+nxrx?.. :**x=          .`.....``.........
-                              ;~=?.:=:`:;:``  .:r     .........``.. ....```. ..
-                              .. ~+.==*xnn?~ `r..        ......  ..`. .``. .`. .. .
-                                  `.~*r=~:` ...       ...     .:;:`..``  .`.  ....  `
-                                 ~*`  `:;~~`                .;~:...``. .:`. .  .   `  .
-                               ~mm+:?=:.             :ww?  .`    ..  .``.  .     .:.           .
-                            .=u%#`  xuuxr=~~;`....   u%%@+  `xr=:.        ;~    ;~. `.       ...
-                          ;x#@#+=  .rnxxxxx?=+x?=`  ;@mm@n ;~n@@#wu*;.   :=.   `~` ``    .`  :;
-                      :rnm@@%%#=r~ ..+nuux**rr~.   :m%#w#wn** *@%###wn*;;~.   .;.  .  `  ::...``
-                  :rn#%%%%%##m#w#u     ::`..     :r=`=;:*?xnr:+@@#%x#muxn*x;..`.  `   .  ;*;. ;=
-               `*m@m#@#%m?nx*u?=?@~ ..          =+.~n~ n@%%@@nn%@@@r?@%?u#u;`r`   ..      ~r; r?
-             .u@@@#u%#@mrw%m@u~`n@n  ..        ;* *@+:*@%unw@@x*%@@%`*@%?@@: .?;      .   ~nn =u
-             n@w%%##m@w+#@mm@n*@@@@:          +x?m%;=u?@#umxm@@u?%@@m.r@w#%r  `%=         .=nr.n
-            x@xn@@m#@m+m@##%%@wwmm@?         .m%@%+rwnn%wxmmu%#%wu#m#u ~w@@x   #%          ;*u=*
-           =@@u~w@%@#?n@@%%%%@%wmumn         +@@%**wunxm#*xmm%%#%#wwmwn .m@=  `@%.         .r*w?
-          `%@%@x;#@%muw%@%%%%%%@m%w?.        w%mm=uwnrr@@+?%n#@@wunm@#@: *@.  ?@#           ~+nn
-         .m@@%%mw#@%ux#@@@%%@@@@%mu~*        u#un=uux*m##r*%wun%wnr#@%@; :u  ;@@u  ?*       .++u
-        ;#@%@@#*n%%@ux@@@%%@@%@@%nw?;        r@@n=nw%x?uwwr*xwwwwx?uwuu; .*  m@@? =@@:       ~=?
-       ~@%%%%@#=+%#mmw#%#######wuuwn    .    =@%x+x#%wrw@@#n;*@mx?um#w%* .+ *@@m?`+@@w:.     .=~
-       #@%%%%%@?:%@##wm%%%%@%m%#@%n?:   `    ~@%?r?m%%urnm%@m~=mwnnw##@u    u@%n?+m@@m~w~     =:
-      u@%%%%@#@#+#@%##%@@%%#ww%%@%xn;   `    `@@nrxm@@#uxnxw@@+`nwmmw#@u    r%mmmn@@%= =%?    `=
-     r@%%@@%%@%# u@#%@@%%@#uw%@%@@xm+   `     m%n?xu%%%mn#?x%##=;m%wwwwu   ~%%%%%#w%?   `mw:   r
-    :@@%%%%%%%@@+?@#%%%%%%mww@%#%@xxr.  `     w@wwu*%%mmwwuu#uwu~xmuwm#m`   n@uxnnnwmmn:  nm~  +
-    n@#%%#####%%mx@%%%%%%##w#%#%#@x?=   `     w%:r%*%@#%#wxxmmu%*+nm#%%w.    ;?w#%%#%@@+   ?%= ~
-    *%wm####mwmmu?@%%%%%%%ww##%%%@x*.  ..     n#?mw*%@%@#mu*?@wn#nnn#w#u      %@%##@w=.     n%u*
-    ?@%%#muwwwwwmn%##%%%%mm###%%@@xr.         *w%mrn@@#%@#mu*?#uxw#wwwm*    .+m#mwm*`;.     .n#n
-    n#uw%%wwn?xnuw%%%@%#mw#####%@@*?;         =w%*r#@@%#%%%mu?*uwnw%w#m`    :%mwnxnwr;??`    =?x
-   r@#%#mm%%x?xxx=n@%%#wwm#m##%@@@r+;   .     :u#*n%@@%###@@wuuxwwmmm%+      ~@%##ww=  =~      .
-   .n@%#%###%*+*+`~@%#uumm#%%@@@@@*..         .?m*n@@@%%###%%mmnwmwwmu+.     *@#m#%?
-     m@##m%@m+*x*?*@%#nwm#%@@@@@@@n            *m*u@%@%#####%##wm@mwn*r.     ~@#mnn#m+
-     r@%%@@#umwr=+?@#wnm%@@@@@@@@@x     .      *m*u@%%@#%###%#w#%%mu+:      .u#mwxxuwx         .
-     `@@%mww##nnn?:=%#%@%##%%%%@@@+     .      r@~;%@@@%%##%%#####wr        r@@%@*.         .+;.
-      u@mwm%%##m+:` m@##%##m####@@~            =#mm%#@@@#%%#%####@r       `*%mwmmmwu:  .    :*~;
-      .#%#%%@@n;=xx;*wmm##%%%#m#@@`            :m%mww%@@%###mmm%@w        %xrmwuuwmu:        .r:
-       :#@%@@#r+xxx=nxn%%#%#%#mm@u             `%@mmwm#@@m?##wmm%n      .*w#*+?wu?=          `r`
-        .n@%n?w#xnwu%%m###@%@@#m@+              #@m@#ww%@x+m%#uunn=.    x@w?w#x=;+;    .:. +r:`
-          n#um%wu###mx@@####@@%%#               u@w%%www*?wnu#nxxnn+ ; =@w@%xx#@*      `;:.:`
-           w%#m#%#%m;r@%%###%@@@~     `:`..   . ?@wuwuwn?mm?*#un??*?:~*rum#@%nx#*      ``*#*```.
-        `. :w%%%%@x~*wmwm#%@#n@w     ;m#xuu+nwnxummwxnmnuwmn*wxr*uuuxnw***?#@r=:     `; .`;:  `:
-.:;::x+?=~=  :x@@r;nwmwuuunm%u@~     u%uuuxrn%xxnnx*?nnuwwn?xuwunnuwn*??**+~*=    .~:++
- .+r;=*x*~;    +x.rwwwu#muxnwmmun*rw:=mmuuurn%wunuunwwuwmwuunx?xnunnu**xr`.: .++  :*~
-  `+~`~ ;x~  .   :xwunmwwuuwwuw#%@w+m*+*wwuunxununn?*nux?*nuwwwuxxxxxxnx.     ;;
-  :x: =:`:~`     :`~wuuuwwuwwwwm#mr +ww*+wmunr?u?*+*nwrrn%#mwwwwxxn?+*x+             .        .
- `*. ``~?:.+~.~..   xmnwwuuwuwuuuux=.=?wn*##u*+x?xxmnxu#wn?nwwx?un*=?n+==           .        ..
-  . ...:;    ~`     :%wuwmunuuuwwwn?r` ?unn?***rnwmx?x*+rxm#mmwwxr*?un+:            .
-              ~r     m#mwuunuuuwwuun?. :wwunnxxr=*=~*nw#%%%###uxxnuw*::`;:            .
-              `:.    nmwwnnnnnnuuwuux`  ;nxxnxuw+.`n#mwuuuum%#uuwuwx=~?+;`.          .
-                 .   umuwunnnnnnuuuwn~ `.;*?xnxxx: m%wmm##%%%#wuu?rrr++++==;:+r    ..
-                  .  wwuuunnnnnnuuuww?;~~`:~=*uwn` ?@mwwmmmmwx**xxnunnx???***r;
-                 r= `mununnxxnxxnnnuw*  ;*r=;;*r`   w%wuummmmwmmmwunxxxx?*r**+=:
-                    :munuux?xxxxxxnxnn:  ``.        =@#mwuwwm##mmmmwn*+*?x?rr` ~~ :`..
-                    ~mnnnuxxxxxnxxx??n?.             +@wm#mmwwmmwmmm#mur~r**r+;.:;
-                    =mnnunxxx??xx???*?n*.         .`` *@uwmmmmmm#mmwwuwwnr~;;;=+:
-                    ~wnnnnnxx?*?xxx?*rrxr.    ;~;~;::. ?@wwwmmwuwmwwwunnnux*~::``
+              ;+=+:        .``.
+            .?m#mwr.      ..`::`
+            `*+=n~+`.   ....`;;;:.
+            :u?*?`rn;    ..`::;;;:.
+            `+=+r=.~` ....```:;:;;`
+              ;;=~.      .````````:`
+            ;x~r;`.   ?x ;`  ..: :;.
+         .~u@+ ?wxr+``%%~r#ur`:` ;.`
+       =n###un: ::` `==xmr#@mwx;` .  `
+     :#@%mu#*w?    `**r%m%u@?w@+::   .;
+     ww%#n@@##w    w#?wwn%#mm~#*.u    ;.
+    *@x#mm@%@%n.  :%xxnwx##n@*=~=w    .:
+   =@@n#w#@%%#n`  .%?wnmxnm?#?.:%**x   :
+  `@%@?m##%#m#u.   #*mmn#xxu#m ;@?#w+` :
+  u@%@uu@@@w%@w:   wnu%nn%+wmw =@w#r:x`.
+ :@##%mw@%#w%%u`   xnu%#xwu?#m .?mm%;`n~
+ :##wuwm%%#m#@n    ?wu@%wxww#n  x#w=` ~u
+ =#m#x*x@mw##@?.   +nm@#%unw%+  u#u`;  .
+ .w%%n+*%u#@@@r    ;n#@###w#u;  n#w+
+  *@mmn=w%%%%@+    ;nm@#####:  :%m+;
+  :#%%*~*###m@;    `#m%@#m@r  `numn
+   =@uxuwm#%%#.     ##mmn#wr  uwx?:
+    +@#%x#%#@*  :`.`w#unuuxx=+#%wr  .:
+  .:.+%xxwwm#: +%xnunnnwnxxuuxr?= `;.
+   :` `+wwuuw#x?nununxunuunnxx` `.`.
+    ``. *mwww#r+xun*xnxnwwu*?*
+     `: ;%wuuwu:=wx**?nummnnx~`
+      . :#wnnum+.rxw;x#m##nn*r=::
+       .~#unnnw?`=~x:+%wmwuunxx?~
+        ;nnxxxxx..    wmwm##w?r;
+        .=?x?x??r  `:`:mmmmmwn~

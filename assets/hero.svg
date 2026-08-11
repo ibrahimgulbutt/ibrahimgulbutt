@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-labelledby="ht hd">
-<title id="ht">Ibrahim Gul Butt — I build mobile apps, web apps, desktop apps, Linux internals, cloud platforms and ML pipelines</title>
+<title id="ht">Ibrahim Gul Butt. I build mobile apps, web apps, desktop apps, Linux internals, cloud platforms and ML pipelines</title>
 <desc id="hd">A rotating headline beside a phone, a browser window and a terminal, each running.</desc>
 <style>
   :root{
@@ -53,10 +53,16 @@
   .nav{animation:hop 6s steps(1) infinite}
   @keyframes hop{0%,33%{fill:var(--violet)}33.01%,100%{fill:var(--line)}}
 
+  .por{font:4.6px/5.6px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#7d8892;white-space:pre;
+        animation:ripple 3.4s ease-in-out infinite, shimmer 3.4s ease-in-out infinite}
+  @keyframes ripple{0%,100%{transform:translateX(-1.5px)}50%{transform:translateX(1.5px)}}
+  @keyframes shimmer{0%,100%{fill:#7d8892}50%{fill:#e6edf3}}
+
   @media (prefers-reduced-motion: reduce){
-    .rw,.car,.row,.bar,.tl,.nav{animation:none}
+    .rw,.car,.row,.bar,.tl,.nav,.por{animation:none}
     .rw:first-of-type{opacity:1}
     .row,.tl{opacity:1}
+    .por{fill:#c9d1d9}
   }
 </style>
 <defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="var(--grid)" stroke-width="1"/></pattern><clipPath id="c"><rect x="1" y="1" width="1198" height="378" rx="18"/></clipPath><radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="var(--blue)" stop-opacity="0.13"/><stop offset="100%" stop-color="var(--blue)" stop-opacity="0"/></radialGradient></defs>
@@ -64,21 +70,53 @@
 <rect clip-path="url(#c)" x="1" y="1" width="1198" height="378" fill="url(#g)"/>
 <ellipse cx="930" cy="190" rx="330" ry="230" fill="url(#glow)"/>
 <rect x="1" y="1" width="1198" height="378" rx="18" fill="none" stroke="var(--border)" stroke-width="1.5"/>
-<text class="nm" x="64" y="92">Ibrahim Gul Butt</text>
-<text class="eye" x="66" y="136">I BUILD</text>
-<g class="rw" style="animation-delay:0.00s"><text class="wd" x="64" y="182" fill="var(--violet)">mobile apps</text><rect class="car" x="309.6" y="155" width="13" height="34" rx="2" fill="var(--violet)"/></g>
-<g class="rw" style="animation-delay:2.30s"><text class="wd" x="64" y="182" fill="var(--blue)">web apps</text><rect class="car" x="244.8" y="155" width="13" height="34" rx="2" fill="var(--blue)"/></g>
-<g class="rw" style="animation-delay:4.60s"><text class="wd" x="64" y="182" fill="var(--amber)">desktop apps</text><rect class="car" x="331.2" y="155" width="13" height="34" rx="2" fill="var(--amber)"/></g>
-<g class="rw" style="animation-delay:6.90s"><text class="wd" x="64" y="182" fill="var(--green)">Linux internals</text><rect class="car" x="396" y="155" width="13" height="34" rx="2" fill="var(--green)"/></g>
-<g class="rw" style="animation-delay:9.20s"><text class="wd" x="64" y="182" fill="var(--cyan)">cloud platforms</text><rect class="car" x="396" y="155" width="13" height="34" rx="2" fill="var(--cyan)"/></g>
-<g class="rw" style="animation-delay:11.50s"><text class="wd" x="64" y="182" fill="var(--violet)">ML pipelines</text><rect class="car" x="331.2" y="155" width="13" height="34" rx="2" fill="var(--violet)"/></g>
-<text class="sub" x="64" y="228">Site reliability by day. Mobile, web and systems the rest of the time.</text>
-<text class="sub2" x="64" y="253">Lahore, Pakistan · Final year Software Engineering @ FAST-NUCES · graduating December 2026</text>
-<rect class="chip" x="64" y="286" width="78" height="28" rx="14"/><text class="v" x="103" y="304.2" text-anchor="middle">Android</text>
-<rect class="chip" x="150" y="286" width="50" height="28" rx="14"/><text class="v" x="175" y="304.2" text-anchor="middle">iOS</text>
-<rect class="chip" x="208" y="286" width="64" height="28" rx="14"/><text class="v" x="240" y="304.2" text-anchor="middle">Linux</text>
-<rect class="chip" x="280" y="286" width="50" height="28" rx="14"/><text class="v" x="305" y="304.2" text-anchor="middle">Web</text>
-<rect class="chip" x="338" y="286" width="100" height="28" rx="14"/><text class="v" x="388" y="304.2" text-anchor="middle">Kubernetes</text>
+<text class="nm" x="214" y="92">Ibrahim Gul Butt</text>
+<text class="eye" x="216" y="136">I BUILD</text>
+<rect x="64" y="84" width="128" height="192" rx="12" fill="#0d1117" stroke="#283039" stroke-width="1.5"/>
+<text class="por" xml:space="preserve" x="73" y="97.6" style="animation-delay:-0.000s">              ;+=+:        .``.</text>
+<text class="por" xml:space="preserve" x="73" y="103.2" style="animation-delay:-0.110s">            .?m#mwr.      ..`::`</text>
+<text class="por" xml:space="preserve" x="73" y="108.8" style="animation-delay:-0.219s">            `*+=n~+`.   ....`;;;:.</text>
+<text class="por" xml:space="preserve" x="73" y="114.4" style="animation-delay:-0.329s">            :u?*?`rn;    ..`::;;;:.</text>
+<text class="por" xml:space="preserve" x="73" y="120.0" style="animation-delay:-0.439s">            `+=+r=.~` ....```:;:;;`</text>
+<text class="por" xml:space="preserve" x="73" y="125.6" style="animation-delay:-0.548s">              ;;=~.      .````````:`</text>
+<text class="por" xml:space="preserve" x="73" y="131.2" style="animation-delay:-0.658s">            ;x~r;`.   ?x ;`  ..: :;.</text>
+<text class="por" xml:space="preserve" x="73" y="136.8" style="animation-delay:-0.768s">         .~u@+ ?wxr+``%%~r#ur`:` ;.`</text>
+<text class="por" xml:space="preserve" x="73" y="142.4" style="animation-delay:-0.877s">       =n###un: ::` `==xmr#@mwx;` .  `</text>
+<text class="por" xml:space="preserve" x="73" y="148.0" style="animation-delay:-0.987s">     :#@%mu#*w?    `**r%m%u@?w@+::   .;</text>
+<text class="por" xml:space="preserve" x="73" y="153.6" style="animation-delay:-1.097s">     ww%#n@@##w    w#?wwn%#mm~#*.u    ;.</text>
+<text class="por" xml:space="preserve" x="73" y="159.2" style="animation-delay:-1.206s">    *@x#mm@%@%n.  :%xxnwx##n@*=~=w    .:</text>
+<text class="por" xml:space="preserve" x="73" y="164.8" style="animation-delay:-1.316s">   =@@n#w#@%%#n`  .%?wnmxnm?#?.:%**x   :</text>
+<text class="por" xml:space="preserve" x="73" y="170.4" style="animation-delay:-1.426s">  `@%@?m##%#m#u.   #*mmn#xxu#m ;@?#w+` :</text>
+<text class="por" xml:space="preserve" x="73" y="176.0" style="animation-delay:-1.535s">  u@%@uu@@@w%@w:   wnu%nn%+wmw =@w#r:x`.</text>
+<text class="por" xml:space="preserve" x="73" y="181.6" style="animation-delay:-1.645s"> :@##%mw@%#w%%u`   xnu%#xwu?#m .?mm%;`n~</text>
+<text class="por" xml:space="preserve" x="73" y="187.2" style="animation-delay:-1.755s"> :##wuwm%%#m#@n    ?wu@%wxww#n  x#w=` ~u</text>
+<text class="por" xml:space="preserve" x="73" y="192.8" style="animation-delay:-1.865s"> =#m#x*x@mw##@?.   +nm@#%unw%+  u#u`;  .</text>
+<text class="por" xml:space="preserve" x="73" y="198.4" style="animation-delay:-1.974s"> .w%%n+*%u#@@@r    ;n#@###w#u;  n#w+</text>
+<text class="por" xml:space="preserve" x="73" y="204.0" style="animation-delay:-2.084s">  *@mmn=w%%%%@+    ;nm@#####:  :%m+;</text>
+<text class="por" xml:space="preserve" x="73" y="209.6" style="animation-delay:-2.194s">  :#%%*~*###m@;    `#m%@#m@r  `numn</text>
+<text class="por" xml:space="preserve" x="73" y="215.2" style="animation-delay:-2.303s">   =@uxuwm#%%#.     ##mmn#wr  uwx?:</text>
+<text class="por" xml:space="preserve" x="73" y="220.8" style="animation-delay:-2.413s">    +@#%x#%#@*  :`.`w#unuuxx=+#%wr  .:</text>
+<text class="por" xml:space="preserve" x="73" y="226.4" style="animation-delay:-2.523s">  .:.+%xxwwm#: +%xnunnnwnxxuuxr?= `;.</text>
+<text class="por" xml:space="preserve" x="73" y="232.0" style="animation-delay:-2.632s">   :` `+wwuuw#x?nununxunuunnxx` `.`.</text>
+<text class="por" xml:space="preserve" x="73" y="237.6" style="animation-delay:-2.742s">    ``. *mwww#r+xun*xnxnwwu*?*</text>
+<text class="por" xml:space="preserve" x="73" y="243.2" style="animation-delay:-2.852s">     `: ;%wuuwu:=wx**?nummnnx~`</text>
+<text class="por" xml:space="preserve" x="73" y="248.8" style="animation-delay:-2.961s">      . :#wnnum+.rxw;x#m##nn*r=::</text>
+<text class="por" xml:space="preserve" x="73" y="254.4" style="animation-delay:-3.071s">       .~#unnnw?`=~x:+%wmwuunxx?~</text>
+<text class="por" xml:space="preserve" x="73" y="260.0" style="animation-delay:-3.181s">        ;nnxxxxx..    wmwm##w?r;</text>
+<text class="por" xml:space="preserve" x="73" y="265.6" style="animation-delay:-3.290s">        .=?x?x??r  `:`:mmmmmwn~</text>
+<g class="rw" style="animation-delay:0.00s"><text class="wd" x="214" y="182" fill="var(--violet)">mobile apps</text><rect class="car" x="459.6" y="155" width="13" height="34" rx="2" fill="var(--violet)"/></g>
+<g class="rw" style="animation-delay:2.30s"><text class="wd" x="214" y="182" fill="var(--blue)">web apps</text><rect class="car" x="394.8" y="155" width="13" height="34" rx="2" fill="var(--blue)"/></g>
+<g class="rw" style="animation-delay:4.60s"><text class="wd" x="214" y="182" fill="var(--amber)">desktop apps</text><rect class="car" x="481.2" y="155" width="13" height="34" rx="2" fill="var(--amber)"/></g>
+<g class="rw" style="animation-delay:6.90s"><text class="wd" x="214" y="182" fill="var(--green)">Linux internals</text><rect class="car" x="546" y="155" width="13" height="34" rx="2" fill="var(--green)"/></g>
+<g class="rw" style="animation-delay:9.20s"><text class="wd" x="214" y="182" fill="var(--cyan)">cloud platforms</text><rect class="car" x="546" y="155" width="13" height="34" rx="2" fill="var(--cyan)"/></g>
+<g class="rw" style="animation-delay:11.50s"><text class="wd" x="214" y="182" fill="var(--violet)">ML pipelines</text><rect class="car" x="481.2" y="155" width="13" height="34" rx="2" fill="var(--violet)"/></g>
+<text class="sub" x="214" y="228">Site reliability by day. Mobile, web and systems otherwise.</text>
+<text class="sub2" x="214" y="253">Lahore, Pakistan · Final year SE @ FAST-NUCES · graduating Dec 2026</text>
+<rect class="chip" x="214" y="286" width="78" height="28" rx="14"/><text class="v" x="253" y="304.2" text-anchor="middle">Android</text>
+<rect class="chip" x="300" y="286" width="50" height="28" rx="14"/><text class="v" x="325" y="304.2" text-anchor="middle">iOS</text>
+<rect class="chip" x="358" y="286" width="64" height="28" rx="14"/><text class="v" x="390" y="304.2" text-anchor="middle">Linux</text>
+<rect class="chip" x="430" y="286" width="50" height="28" rx="14"/><text class="v" x="455" y="304.2" text-anchor="middle">Web</text>
+<rect class="chip" x="488" y="286" width="100" height="28" rx="14"/><text class="v" x="538" y="304.2" text-anchor="middle">Kubernetes</text>
 <rect class="frm" x="700" y="44" width="132" height="292" rx="20"/>
 <rect class="snk" x="749" y="52" width="34" height="6" rx="3"/>
 <text class="lbl" x="714" y="84">NODE MIND</text>

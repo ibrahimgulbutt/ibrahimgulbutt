@@ -66,6 +66,28 @@ WORDS = [
 
 PLATFORMS = ["Android", "iOS", "Linux", "Web", "Kubernetes"]
 
+TX = 214          # text column: clears the portrait card on the left
+PFS, PLH = 4.6, 5.6   # portrait glyph size and line height
+
+
+def _portrait_card(x, y):
+    """The ASCII portrait, small, as a card inside the hero.
+
+    Its own dark ground regardless of theme: glyph density only reads as
+    light-on-dark, so on a light page it would invert into a negative.
+    """
+    art = (ASSETS / "portrait.txt").read_text(encoding="utf-8").strip("\n").split("\n")
+    cols = max(len(r) for r in art)
+    inner_w, inner_h = cols * PFS * MONO_W, len(art) * PLH
+    w, h = round(inner_w + 18), round(inner_h + 18)
+    out = [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="#0d1117" '
+           f'stroke="#283039" stroke-width="1.5"/>']
+    for i, row in enumerate(art):
+        out.append(f'<text class="por" xml:space="preserve" x="{x + 9}" '
+                   f'y="{y + 9 + PFS + i * PLH:.1f}" '
+                   f'style="animation-delay:-{i * 3.4 / len(art):.3f}s">{esc(row)}</text>')
+    return out
+
 
 def hero():
     W, H = 1200, 380
@@ -76,7 +98,7 @@ def hero():
     p = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
         f'role="img" aria-labelledby="ht hd">',
-        '<title id="ht">Ibrahim Gul Butt — I build mobile apps, web apps, desktop apps, '
+        '<title id="ht">Ibrahim Gul Butt. I build mobile apps, web apps, desktop apps, '
         'Linux internals, cloud platforms and ML pipelines</title>',
         '<desc id="hd">A rotating headline beside a phone, a browser window and a terminal, '
         'each running.</desc>',
@@ -119,10 +141,16 @@ def hero():
   .nav{{animation:hop 6s steps(1) infinite}}
   @keyframes hop{{0%,33%{{fill:var(--violet)}}33.01%,100%{{fill:var(--line)}}}}
 
+  .por{{font:{PFS}px/{PLH}px {MONO};fill:#7d8892;white-space:pre;
+        animation:ripple 3.4s ease-in-out infinite, shimmer 3.4s ease-in-out infinite}}
+  @keyframes ripple{{0%,100%{{transform:translateX(-1.5px)}}50%{{transform:translateX(1.5px)}}}}
+  @keyframes shimmer{{0%,100%{{fill:#7d8892}}50%{{fill:#e6edf3}}}}
+
   @media (prefers-reduced-motion: reduce){{
-    .rw,.car,.row,.bar,.tl,.nav{{animation:none}}
+    .rw,.car,.row,.bar,.tl,.nav,.por{{animation:none}}
     .rw:first-of-type{{opacity:1}}
     .row,.tl{{opacity:1}}
+    .por{{fill:#c9d1d9}}
   }}
 """ + "</style>",
         '<defs>'
@@ -139,27 +167,31 @@ def hero():
         f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="none" '
         f'stroke="var(--border)" stroke-width="1.5"/>',
 
-        '<text class="nm" x="64" y="92">Ibrahim Gul Butt</text>',
-        '<text class="eye" x="66" y="136">I BUILD</text>',
+        f'<text class="nm" x="{TX}" y="92">Ibrahim Gul Butt</text>',
+        f'<text class="eye" x="{TX + 2}" y="136">I BUILD</text>',
     ]
+
+    p += _portrait_card(64, 84)
 
     # rotating headline, each word carrying its own caret
     for i, (word, hue) in enumerate(WORDS):
         d = f"{i * rot / len(WORDS):.2f}s"
-        cx = 64 + mono_w(word, fs_w) + 8
+        cx = TX + mono_w(word, fs_w) + 8
         p.append(f'<g class="rw" style="animation-delay:{d}">'
-                 f'<text class="wd" x="64" y="182" fill="var(--{hue})">{esc(word)}</text>'
+                 f'<text class="wd" x="{TX}" y="182" fill="var(--{hue})">{esc(word)}</text>'
                  f'<rect class="car" x="{cx:g}" y="155" width="13" height="34" rx="2" '
                  f'fill="var(--{hue})"/></g>')
 
+    # Both lines are kept short on purpose: the portrait card pushes the text block
+    # right, and the device cluster starts at x=700.
     p += [
-        '<text class="sub" x="64" y="228">Site reliability by day. Mobile, web and systems '
-        'the rest of the time.</text>',
-        '<text class="sub2" x="64" y="253">Lahore, Pakistan · Final year Software Engineering '
-        '@ FAST-NUCES · graduating December 2026</text>',
+        f'<text class="sub" x="{TX}" y="228">Site reliability by day. Mobile, web and '
+        'systems otherwise.</text>',
+        f'<text class="sub2" x="{TX}" y="253">Lahore, Pakistan · Final year SE @ FAST-NUCES '
+        '· graduating Dec 2026</text>',
     ]
 
-    x = 64
+    x = TX
     for label in PLATFORMS:
         s, w = chip(x, 300, label, fs=12, h=28)
         p.append(s)
@@ -227,64 +259,6 @@ def _terminal(x, y, w, h):
     p.append(f'<rect class="car" x="{x + 26}" y="{ly - 8}" width="6" height="10" '
              f'fill="var(--green)"/>')
     return p
-
-
-# --------------------------------------------------------------- portrait
-
-
-def portrait():
-    """ASCII portrait with a wave rippling down it.
-
-    GitHub renders SVGs referenced by <img> in secure animated mode: animations run,
-    but pointer events and :hover never fire. So the wave runs continuously instead of
-    on hover, which is the closest thing to interactive that a README allows.
-
-    Source art is assets/portrait.txt, regenerated by tools/portrait_from_image.py.
-    """
-    art = (ASSETS / "portrait.txt").read_text(encoding="utf-8").rstrip("\n").split("\n")
-    fs, lh = 10.0, 10.6
-    cw = fs * MONO_W
-    cols = max(len(r) for r in art)
-    amp, padx, pady = 3, 26, 26
-    W = round(cols * cw + padx * 2)
-    H = round(len(art) * lh + pady * 2)
-    dur = 3.4
-
-    p = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
-        f'height="{H}" role="img" aria-labelledby="pot">',
-        '<title id="pot">Ibrahim Gul Butt, rendered as ASCII art</title>',
-        # Deliberately NOT theme-aware. Brightness maps to glyph density, which only
-        # reads correctly as light-on-dark; on a light ground the portrait inverts into
-        # a photographic negative. So the card keeps its own dark ground in both themes.
-        "<style>" + f"""
-  .r{{font:{fs}px/{lh}px {MONO};fill:#7d8892;white-space:pre;
-     animation:wave {dur}s ease-in-out infinite, glow {dur}s ease-in-out infinite}}
-  @keyframes wave{{
-    0%,100%{{transform:translateX(-{amp}px)}}
-    50%    {{transform:translateX({amp}px)}}
-  }}
-  @keyframes glow{{
-    0%,100%{{fill:#7d8892}}
-    50%    {{fill:#e6edf3}}
-  }}
-  @media (prefers-reduced-motion: reduce){{
-    .r{{animation:none;fill:#c9d1d9}}
-  }}
-""" + "</style>",
-        f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="16" fill="#0d1117" '
-        f'stroke="#283039" stroke-width="1.5"/>',
-    ]
-    for i, row in enumerate(art):
-        # negative, staggered delays put each line at a different phase, so the
-        # crest travels down the portrait instead of every line moving together.
-        # One full wavelength spans the art, whatever its row count.
-        p.append(f'<text class="r" xml:space="preserve" x="{padx}" '
-                 f'y="{pady + fs + i * lh:g}" '
-                 f'style="animation-delay:-{i * dur / len(art):.3f}s">'
-                 f'{esc(row)}</text>')
-    p.append("</svg>")
-    return "\n".join(p)
 
 
 # --------------------------------------------------------------- pipeline
@@ -423,7 +397,6 @@ def stack():
 
 if __name__ == "__main__":
     ASSETS.mkdir(exist_ok=True)
-    for name, fn in (("hero", hero), ("stack", stack), ("pipeline", pipeline),
-                     ("portrait", portrait)):
+    for name, fn in (("hero", hero), ("stack", stack), ("pipeline", pipeline)):
         (ASSETS / f"{name}.svg").write_text(fn(), encoding="utf-8")
         print(f"wrote assets/{name}.svg")
