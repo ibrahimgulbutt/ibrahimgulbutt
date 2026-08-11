@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508 540" width="508" height="540" role="img" aria-labelledby="pot">
+<title id="pot">Ibrahim Gul Butt, rendered as ASCII art</title>
+<style>
+  .r{font:10.0px/10.6px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:#7d8892;white-space:pre;
+     animation:wave 3.4s ease-in-out infinite, glow 3.4s ease-in-out infinite}
+  @keyframes wave{
+    0%,100%{transform:translateX(-3px)}
+    50%    {transform:translateX(3px)}
+  }
+  @keyframes glow{
+    0%,100%{fill:#7d8892}
+    50%    {fill:#e6edf3}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .r{animation:none;fill:#c9d1d9}
+  }
+</style>
+<rect x="1" y="1" width="506" height="538" rx="16" fill="#0d1117" stroke="#283039" stroke-width="1.5"/>
+<text class="r" xml:space="preserve" x="26" y="36" style="animation-delay:-0.000s">                                       `~~`........</text>
+<text class="r" xml:space="preserve" x="26" y="46.6" style="animation-delay:-0.075s"></text>
+<text class="r" xml:space="preserve" x="26" y="57.2" style="animation-delay:-0.150s"></text>
+<text class="r" xml:space="preserve" x="26" y="67.8" style="animation-delay:-0.225s"></text>
+<text class="r" xml:space="preserve" x="26" y="78.4" style="animation-delay:-0.300s">                      `</text>
+<text class="r" xml:space="preserve" x="26" y="89" style="animation-delay:-0.375s">                   .  `;`       ``..      ```.</text>
+<text class="r" xml:space="preserve" x="26" y="99.6" style="animation-delay:-0.450s">                .  ....;``:`.       :`;: :=;;;    ..    .`...</text>
+<text class="r" xml:space="preserve" x="26" y="110.2" style="animation-delay:-0.525s">                  `:`..  `:;;`      `..` ..               .```.</text>
+<text class="r" xml:space="preserve" x="26" y="120.8" style="animation-delay:-0.600s">              .. .:=;        .                              .....</text>
+<text class="r" xml:space="preserve" x="26" y="131.4" style="animation-delay:-0.675s">              .:=r.</text>
+<text class="r" xml:space="preserve" x="26" y="142" style="animation-delay:-0.750s">               ...</text>
+<text class="r" xml:space="preserve" x="26" y="152.6" style="animation-delay:-0.825s">                       `=rr*r+;.:;=?uwwnx*+~;`</text>
+<text class="r" xml:space="preserve" x="26" y="163.2" style="animation-delay:-0.900s">                    :?m@@@@@@@@%@@@@@@@@@@%mwx?=:`.</text>
+<text class="r" xml:space="preserve" x="26" y="173.8" style="animation-delay:-0.975s">                 `rw@@@@@@@@@@@@@@%@@@%%##mun????+;</text>
+<text class="r" xml:space="preserve" x="26" y="184.4" style="animation-delay:-1.050s">              =+=#@@@@@@@@@@@%%%##m#%%%###munxrr?r`    .:</text>
+<text class="r" xml:space="preserve" x="26" y="195" style="animation-delay:-1.125s">             =uu#@%@@@@@@@@@@@%##%#mm#%%%#mwuxr+r+`    `:             .</text>
+<text class="r" xml:space="preserve" x="26" y="205.6" style="animation-delay:-1.200s">            +uw@%%@%%@@@@@@@@@@#%%%###%##%#unxx?*=.</text>
+<text class="r" xml:space="preserve" x="26" y="216.2" style="animation-delay:-1.275s">           r##%#%%%%@@@@@@@@@@@%#%%%%@%%%#munnwu?=``</text>
+<text class="r" xml:space="preserve" x="26" y="226.8" style="animation-delay:-1.350s">          +%###%%%%%@@@@@@%%@@@@##%%@@@@@@%%%mux?=:`.               `;:;::::</text>
+<text class="r" xml:space="preserve" x="26" y="237.4" style="animation-delay:-1.425s">         .w%#%%%%@@@@@@@@@%@@@@%#%@@@@@@@##mmu?=;`                 `==~~;;;:</text>
+<text class="r" xml:space="preserve" x="26" y="248" style="animation-delay:-1.500s">         .xm#%%@###%%#wm##%#@@@@@@@@@wn+`                         .==~~~;;;;</text>
+<text class="r" xml:space="preserve" x="26" y="258.6" style="animation-delay:-1.575s">          ;n%@mr;`..     `r*n%@@@#%@@x;  `~+*?xn?~`               +r==~;;;::</text>
+<text class="r" xml:space="preserve" x="26" y="269.2" style="animation-delay:-1.650s">          .w@x. `=+r*?nnnnu?xw%@@mwux+:~*w#%@@#wn*=.  .           :`..</text>
+<text class="r" xml:space="preserve" x="26" y="279.8" style="animation-delay:-1.725s">          ;@n .n%@@@@@#nr==r?n%@@@w=.  ;+*n?;      .` :r;</text>
+<text class="r" xml:space="preserve" x="26" y="290.4" style="animation-delay:-1.800s">          =@xr#@%n*rr`   . .rxm@@%n`  .*nm@@u????~  `.~#@*                .`</text>
+<text class="r" xml:space="preserve" x="26" y="301" style="animation-delay:-1.875s">          =@%@%w;`;rwr*+~=`;xww@@#w+  `+nwuxx?rr+=*w#mmm#n.           :;~~==</text>
+<text class="r" xml:space="preserve" x="26" y="311.6" style="animation-delay:-1.950s">        `~;%#%mnxuwwuux*++*uww#@@%#*   ;x##%%###%@@@%mu??=           ~*r+=~;</text>
+<text class="r" xml:space="preserve" x="26" y="322.2" style="animation-delay:-2.025s">        =u`m%%#%@#wnxnum#@@#ww#@@@#*;`  =w@@@@@@@%###mu+`            ::`.</text>
+<text class="r" xml:space="preserve" x="26" y="332.8" style="animation-delay:-2.100s">        :m=w%#%%@%#mmmwm%@#unw#%@@@u?+`*r:+w@@@@@@@@@#w*.</text>
+<text class="r" xml:space="preserve" x="26" y="343.4" style="animation-delay:-2.175s">         w=n%m#%@@@%#####@#w#%@@@@@#n~+%x   ;n%%%@@@@%ur`                  .</text>
+<text class="r" xml:space="preserve" x="26" y="354" style="animation-delay:-2.250s">         ~+r#m#%%@@@#urru#w#%#mm@@@u: `:     ;wwwwm@@mn+`              .```.</text>
+<text class="r" xml:space="preserve" x="26" y="364.6" style="animation-delay:-2.325s">         .*~mw#%%@%ur.~w@@@#xr++u%x;        :r+r?*?nm@m*;`           .:``</text>
+<text class="r" xml:space="preserve" x="26" y="375.2" style="animation-delay:-2.400s">         `u:=x##@%n:.r%@%#u=`.   `;=:.         ` .``:n@u;`       .````..  .`</text>
+<text class="r" xml:space="preserve" x="26" y="385.8" style="animation-delay:-2.475s">         ~m; rrxuu: ~*r?r;;:.:~  `;~~=. . .        ` ;@n;        ```::::```.</text>
+<text class="r" xml:space="preserve" x="26" y="396.4" style="animation-delay:-2.550s">         :nx;;;:*u+.::   `~~~*?uu#%m#%m%@n#~ `:;+xu*`u@~        .::;:`.</text>
+<text class="r" xml:space="preserve" x="26" y="407" style="animation-delay:-2.625s">           :::=~?u#x= .;*=:=m@@%#%@mumu**+?r=;`;w@m*`?x.       .~;`.</text>
+<text class="r" xml:space="preserve" x="26" y="417.6" style="animation-delay:-2.700s">             :~~=ru##~.*@@m?r??==*n**nnnxxr~   :##ur. `.</text>
+<text class="r" xml:space="preserve" x="26" y="428.2" style="animation-delay:-2.775s">              `~;;*x%? *#@@mwuum##mw%@#nn?=:  .+rr=`.</text>
+<text class="r" xml:space="preserve" x="26" y="438.8" style="animation-delay:-2.850s">               .`==~+~.=?xw#mwnuwmun?*+r=;.    ++;                   .</text>
+<text class="r" xml:space="preserve" x="26" y="449.4" style="animation-delay:-2.925s">                 `.:....~:ruwmx;`:        .`;?r=+:.</text>
+<text class="r" xml:space="preserve" x="26" y="460" style="animation-delay:-3.000s">                    .   .:+*=~n?=~+~;=::;==r;+=.</text>
+<text class="r" xml:space="preserve" x="26" y="470.6" style="animation-delay:-3.075s">                  ;?*.  . :r;`rr*?m%#@#%mxr=:</text>
+<text class="r" xml:space="preserve" x="26" y="481.2" style="animation-delay:-3.150s">               .~?uum~;    ``:*?*n**?nwu**=</text>
+<text class="r" xml:space="preserve" x="26" y="491.8" style="animation-delay:-3.225s">              ;r?**nx`?u~.    `:`;~:```;``</text>
+<text class="r" xml:space="preserve" x="26" y="502.4" style="animation-delay:-3.300s">            .;=++r`+` :m#wx+:</text>
+<text class="r" xml:space="preserve" x="26" y="513" style="animation-delay:-3.375s">           .:;~+~;`    xm#%@%w*;</text>
+</svg>

@@ -1,44 +1,9 @@
 <img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/hero.svg" alt="Ibrahim Gul Butt. I build mobile apps, web apps, desktop apps, Linux internals, cloud platforms and ML pipelines" width="100%">
 
-```
-
-                                 `:`
-                                 ;**======~~;;::``..
-                                      .`::;;~~~~;;;::`..
-                                              ..``:````...
-                      .  ```.
-                  .::;+~;::`:;:``:`;~;:.:::``::`````.....
-                `:`~~;~~===`..`;~~;;~~~`...`:;~+<+++==~~;;;:
-               `::~<=:``:;;:.     .        .    ~+++<<<++===
-              `.;<<.                             .`:;;~~~~==
-            ::  `.    :=+<<=~~=*xx?<+=;`          .`:::::::;
-           `;`:`  `=<%@@@@@@@@@@@@@@@%ux<=:.         ;~~~===
-         .``;`:`=*%@@@@@@@@@@@@@@@@@@%#uu?~`:;:`      ~++++<
-          ` `; <@@@@@@@@@@@@@@@@@@@@@@%nn?: `=~:``    .+<<<<
-         ``.. x@@@@@@@@@@@@@@@@@@@@@@@%%u*~:;:`..      ;===+
-         ..  *@@@@@@@@@@@@@@@@@@@@@@@@@%u?<~`..       `+<**?
-          : ;@@@@@@@@@@@@@@@@@@@@@@@%ux?<~;;:.       .*?????
-          ``;u@@@%#%#nx#@@@@@@@@@#<~==+=;`           *?*????
-           ..<@#<?uunu#%@@@@@@@@%nn%@@@%u?+;:.       =;;;::`
-            .?@+n@@@@@nnn#@@@@@?=?#@@n=+<;;=+n+`.    .     `
-            .x@@@%xn%*~*xn@@@@@?:x%@@@%%#nnuu%%=.   `. `~+<*
-            *x@@@@@@@@@@@@@@@@@u~=u@@@@@@@@@@ux~ .  .  <?***
-           .@n@@@@@@@@@@@@@@@@@%n*x%@@@@@@@@@n~`..     ;;;;;
-            ##@@@@@@@@@@@@@@@@@@n#@+:<@@@@@@@u; .       ::;=
-            :#@@@@@@@%@@@@@@@@@x`:`..;n@@@@@@n+``.     ;+<<=
-            `#u@@@@%?u@@@%n*+?x*:  `:=<***xu@u<~`.  :;~<*<=+
-            ~@*u#@@+?%#unx*x<*xuu*<+=:``.;*=%u~:`   =<*?***<
-            .xnxx#@un*<*<x@@@@@@@@@#%+=+n@n*@<;`.. :<<+~:.
-              `*nn#@@?n@@%@@#@@%@#nun*+<@@x=<~:`.  ;`     .;
-               .+?xu@?x@@@@@@@@@@@%u*=;?x*+;```.       `;~=~
-                 ;*???xn#@@@u#nx+<<+~=*??+`.          .~;`.
-                   ~*~=*n#x#unnx?**xx??=;`.
-                 :*@@*;;+n?nu#%@@@@u?+;:.      ..
-                *@@@@u%<;:~<*??*<**+;```     ..        ``.
-              ;#@@%nx~@@@u<;. .`..:.      ......      `:`..
-            `<##%#?<; *@@@@@#*=:`      ...`......     `.
-           ;*xxuu*~.  ?@@@@@@@@@%unx???*=~;::``..    ..
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/portrait.svg"
+       alt="Ibrahim Gul Butt, rendered as ASCII art" width="430">
+</p>
 
 I ship across the whole stack, and I mean the whole thing: a PAM module in Rust that
 authenticates your Linux login, a native Android app in Kotlin, a React dashboard, a
