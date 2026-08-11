@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 118" width="400" height="118" role="img" aria-labelledby="cmermaid">
+<title id="cmermaid">Mermaid Studio: A whole diagram editor in one index.html.</title>
+<style>
+  :root{
+    --bg:#f6f8fa; --border:#d8dee4; --grid:#e9edf1; --card:#ffffff; --sunk:#eef1f4;
+    --fg:#1f2328; --muted:#59636e; --dim:#818b98; --line:#d8dee4;
+    --green:#1a7f37; --blue:#0969da; --violet:#8250df; --amber:#9a6700; --cyan:#1b7c83;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1117; --border:#283039; --grid:#161c24; --card:#111820; --sunk:#0a0f16;
+      --fg:#e6edf3; --muted:#9198a1; --dim:#6e7781; --line:#2b3542;
+      --green:#3fb950; --blue:#58a6ff; --violet:#a371f7; --amber:#d29922; --cyan:#39c5cf;
+    }
+  }
+
+  .t{font:700 15px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:var(--fg);letter-spacing:-.2px}
+  .d{font:400 11.5px ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;fill:var(--muted)}
+  .l{font:500 9.5px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:var(--dim);letter-spacing:1.1px}
+  .s{font:500 10px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:var(--green)}
+  .go{font:600 16px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:var(--green);animation:nudge 2.6s ease-in-out infinite}
+  @keyframes nudge{0%,100%{transform:translateX(0);opacity:.5}
+                    50%{transform:translateX(5px);opacity:1}}
+  .pip{animation:pulse 2.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}
+  @media (prefers-reduced-motion: reduce){.go,.pip{animation:none;opacity:1}}
+</style>
+<rect x="1" y="1" width="398" height="116" rx="14" fill="var(--card)" stroke="var(--line)" stroke-width="1.5"/>
+<rect x="1" y="1" width="5" height="116" rx="2.5" fill="var(--green)"/>
+<circle class="pip" cx="32" cy="35" r="4.5" fill="var(--green)"/>
+<text class="t" x="46" y="40">Mermaid Studio</text>
+<text class="d" x="28" y="70">A whole diagram editor in one index.html.</text>
+<text class="l" x="28" y="96">VANILLA JS</text>
+<text class="s" x="374" y="96" text-anchor="end">no build step</text>
+<text class="go" x="368" y="40">&#8594;</text>
+</svg>

@@ -261,6 +261,58 @@ def _terminal(x, y, w, h):
     return p
 
 
+# --------------------------------------------------------------- cards
+
+# One card per project. Each is its own SVG so the README can wrap it in a link.
+# Clicking is the only real interaction a README allows: <img> SVGs never receive
+# :hover or pointer events, but an <a> around the image works everywhere.
+CARDS = [
+    ("faceauth", "faceauth", "faceauth", "amber", "RUST",
+     "Face unlock for Linux. A real PAM module.", "sudo / GDM / SDDM"),
+    ("docker", "fastapi-docker-ci", "fastapi-docker-ci", "blue", "PYTHON / DOCKER",
+     "Same service: 1.27 GB naive, 249 MB done right.", "80% smaller"),
+    ("nodemind", "task_node_map", "Node Mind", "violet", "IONIC / CAPACITOR",
+     "Tasks, mind maps and a focus timer in one app.", "Android / iOS"),
+    ("crypt", "Encrypted-files-backend", "Encrypted Files", "cyan", "FASTAPI / SUPABASE",
+     "Encrypted in your browser. Server holds ciphertext.", "zero knowledge"),
+    ("mermaid", "diagram_builder", "Mermaid Studio", "green", "VANILLA JS",
+     "A whole diagram editor in one index.html.", "no build step"),
+    ("sticky", "sticky-notes-ubuntu", "Sticky Notes", "blue", "ELECTRON / REACT",
+     "Sticky notes the Linux desktop actually deserved.", ".deb release"),
+]
+
+
+def card(slug, repo, title, hue, lang, desc, stat):
+    W, H = 400, 118
+    return "\n".join([
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" '
+        f'height="{H}" role="img" aria-labelledby="c{slug}">',
+        f'<title id="c{slug}">{esc(title)}: {esc(desc)}</title>',
+        "<style>" + TOKENS + f"""
+  .t{{font:700 15px {MONO};fill:var(--fg);letter-spacing:-.2px}}
+  .d{{font:400 11.5px {SANS};fill:var(--muted)}}
+  .l{{font:500 9.5px {MONO};fill:var(--dim);letter-spacing:1.1px}}
+  .s{{font:500 10px {MONO};fill:var(--{hue})}}
+  .go{{font:600 16px {MONO};fill:var(--{hue});animation:nudge 2.6s ease-in-out infinite}}
+  @keyframes nudge{{0%,100%{{transform:translateX(0);opacity:.5}}
+                    50%{{transform:translateX(5px);opacity:1}}}}
+  .pip{{animation:pulse 2.6s ease-in-out infinite}}
+  @keyframes pulse{{0%,100%{{opacity:.3}}50%{{opacity:1}}}}
+  @media (prefers-reduced-motion: reduce){{.go,.pip{{animation:none;opacity:1}}}}
+""" + "</style>",
+        f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="14" fill="var(--card)" '
+        f'stroke="var(--line)" stroke-width="1.5"/>',
+        f'<rect x="1" y="1" width="5" height="{H-2}" rx="2.5" fill="var(--{hue})"/>',
+        f'<circle class="pip" cx="32" cy="35" r="4.5" fill="var(--{hue})"/>',
+        f'<text class="t" x="46" y="40">{esc(title)}</text>',
+        f'<text class="d" x="28" y="70">{esc(desc)}</text>',
+        f'<text class="l" x="28" y="96">{esc(lang)}</text>',
+        f'<text class="s" x="{W-26}" y="96" text-anchor="end">{esc(stat)}</text>',
+        f'<text class="go" x="{W-32}" y="40">&#8594;</text>',
+        "</svg>",
+    ])
+
+
 # --------------------------------------------------------------- pipeline
 
 STAGES = ["commit", "build", "test", "deploy"]
@@ -400,3 +452,6 @@ if __name__ == "__main__":
     for name, fn in (("hero", hero), ("stack", stack), ("pipeline", pipeline)):
         (ASSETS / f"{name}.svg").write_text(fn(), encoding="utf-8")
         print(f"wrote assets/{name}.svg")
+    for c in CARDS:
+        (ASSETS / f"card-{c[0]}.svg").write_text(card(*c), encoding="utf-8")
+    print(f"wrote {len(CARDS)} project cards")
