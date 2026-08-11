@@ -35,6 +35,8 @@ Final year of Software Engineering at FAST-NUCES, Lahore. Graduating December 20
 
 ## Cloud &amp; reliability
 
+<img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/pipeline.svg" alt="A deploy moving through commit, build, test and deploy, then landing as healthy pods in production" width="100%">
+
 |  |  |
 |---|---|
 | **[fastapi-docker-ci](https://github.com/ibrahimgulbutt/fastapi-docker-ci)** · Python, Docker<br>One service, two Dockerfiles: **1.27 GB** naive against **249 MB** done properly — slim base, discarded build stage, non-root, health-checked, built and pushed by GitHub Actions. | **[ci-cd-testing](https://github.com/ibrahimgulbutt/ci-cd-testing)** · Kubernetes, Actions<br>Deployment, service and ingress manifests driven by a self-hosted Actions runner. The unglamorous plumbing, on purpose. |

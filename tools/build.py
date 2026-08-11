@@ -229,6 +229,95 @@ def _terminal(x, y, w, h):
     return p
 
 
+# --------------------------------------------------------------- pipeline
+
+STAGES = ["commit", "build", "test", "deploy"]
+
+
+def pipeline():
+    """A deploy travelling commit -> build -> test -> deploy -> production pods."""
+    W, H = 1200, 150
+    loop = 7.0
+    sw, sh = 128, 42
+    cy = H / 2
+    sy = cy - sh / 2
+    xs = [64, 244, 424, 604]
+
+    p = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
+        f'role="img" aria-labelledby="pt pd">',
+        '<title id="pt">A deploy pipeline</title>',
+        '<desc id="pd">A change moving through commit, build, test and deploy, then landing '
+        'as healthy pods in production.</desc>',
+        "<style>" + TOKENS + f"""
+  .stg {{font:500 13px {MONO};fill:var(--muted);letter-spacing:.6px}}
+  .cap {{font:400 12px {MONO};fill:var(--dim);letter-spacing:1.6px}}
+  .box {{fill:var(--card);stroke:var(--line);stroke-width:1.5}}
+  .wire{{stroke:var(--line);stroke-width:2;stroke-linecap:round}}
+
+  .box.live{{animation:lit {loop}s linear infinite}}
+  @keyframes lit{{0%,4%{{stroke:var(--line)}}9%,19%{{stroke:var(--green)}}25%,100%{{stroke:var(--line)}}}}
+  .lbl.live{{animation:txt {loop}s linear infinite}}
+  @keyframes txt{{0%,4%{{fill:var(--muted)}}9%,19%{{fill:var(--green)}}25%,100%{{fill:var(--muted)}}}}
+
+  .packet{{animation:fly {loop}s cubic-bezier(.45,.05,.55,.95) infinite}}
+  @keyframes fly{{
+    0%{{transform:translateX(0);opacity:0}}
+    4%{{opacity:1}}
+    62%{{transform:translateX(872px);opacity:1}}
+    69%,100%{{transform:translateX(872px);opacity:0}}
+  }}
+
+  .pod{{fill:var(--green);stroke:var(--line);stroke-width:1.5;fill-opacity:.10;
+        animation:land {loop}s linear infinite}}
+  @keyframes land{{
+    0%,63%{{fill-opacity:.10;stroke:var(--line)}}
+    68%,88%{{fill-opacity:.80;stroke:var(--green)}}
+    94%,100%{{fill-opacity:.10;stroke:var(--line)}}
+  }}
+
+  @media (prefers-reduced-motion: reduce){{
+    .box.live,.lbl.live,.packet,.pod{{animation:none}}
+    .packet{{opacity:0}}
+    .pod{{fill-opacity:.8;stroke:var(--green)}}
+  }}
+""" + "</style>",
+        '<defs><pattern id="pg" width="40" height="40" patternUnits="userSpaceOnUse">'
+        '<path d="M40 0H0V40" fill="none" stroke="var(--grid)" stroke-width="1"/></pattern>'
+        f'<clipPath id="pc"><rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18"/></clipPath></defs>',
+        f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="var(--bg)"/>',
+        f'<rect clip-path="url(#pc)" x="1" y="1" width="{W-2}" height="{H-2}" fill="url(#pg)"/>',
+        f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="none" '
+        f'stroke="var(--border)" stroke-width="1.5"/>',
+    ]
+
+    for i in range(len(xs)):
+        x1 = xs[i] + sw
+        x2 = xs[i + 1] if i + 1 < len(xs) else 790
+        p.append(f'<line class="wire" x1="{x1}" y1="{cy:g}" x2="{x2}" y2="{cy:g}"/>')
+
+    for i, (x, label) in enumerate(zip(xs, STAGES)):
+        d = f"{i * loop * 0.17:.2f}s"
+        p.append(f'<rect class="box live" x="{x}" y="{sy:g}" width="{sw}" height="{sh}" rx="9" '
+                 f'style="animation-delay:{d}"/>')
+        p.append(f'<text class="stg lbl live" x="{x + sw / 2:g}" y="{cy + 4.5:g}" '
+                 f'text-anchor="middle" style="animation-delay:{d}">{esc(label)}</text>')
+
+    p.append(f'<rect x="790" y="{cy - 38:g}" width="346" height="76" rx="11" fill="var(--card)" '
+             f'stroke="var(--line)" stroke-width="1.5"/>')
+    n = 0
+    for row in (cy - 27, cy + 5):
+        for col in range(6):
+            p.append(f'<rect class="pod" x="{812 + col * 34}" y="{row:g}" width="26" height="26" '
+                     f'rx="7" style="animation-delay:{n * 0.05:.2f}s"/>')
+            n += 1
+    p.append(f'<text class="cap" x="1026" y="{cy + 4:g}">production</text>')
+    p.append(f'<g class="packet"><circle cx="{xs[0] + sw / 2:g}" cy="{cy:g}" r="5" '
+             f'fill="var(--blue)"/></g>')
+    p.append("</svg>")
+    return "\n".join(p)
+
+
 # --------------------------------------------------------------- stack
 
 ROWS = [
@@ -276,6 +365,6 @@ def stack():
 
 if __name__ == "__main__":
     ASSETS.mkdir(exist_ok=True)
-    (ASSETS / "hero.svg").write_text(hero(), encoding="utf-8")
-    (ASSETS / "stack.svg").write_text(stack(), encoding="utf-8")
-    print(f"wrote {ASSETS/'hero.svg'}\nwrote {ASSETS/'stack.svg'}")
+    for name, fn in (("hero", hero), ("stack", stack), ("pipeline", pipeline)):
+        (ASSETS / f"{name}.svg").write_text(fn(), encoding="utf-8")
+        print(f"wrote assets/{name}.svg")

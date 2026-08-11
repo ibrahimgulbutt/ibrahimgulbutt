@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" role="img" aria-labelledby="pt pd">
+<title id="pt">A deploy pipeline</title>
+<desc id="pd">A change moving through commit, build, test and deploy, then landing as healthy pods in production.</desc>
+<style>
+  :root{
+    --bg:#f6f8fa; --border:#d8dee4; --grid:#e9edf1; --card:#ffffff; --sunk:#eef1f4;
+    --fg:#1f2328; --muted:#59636e; --dim:#818b98; --line:#d8dee4;
+    --green:#1a7f37; --blue:#0969da; --violet:#8250df; --amber:#9a6700; --cyan:#1b7c83;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1117; --border:#283039; --grid:#161c24; --card:#111820; --sunk:#0a0f16;
+      --fg:#e6edf3; --muted:#9198a1; --dim:#6e7781; --line:#2b3542;
+      --green:#3fb950; --blue:#58a6ff; --violet:#a371f7; --amber:#d29922; --cyan:#39c5cf;
+    }
+  }
+
+  .stg {font:500 13px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:var(--muted);letter-spacing:.6px}
+  .cap {font:400 12px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:var(--dim);letter-spacing:1.6px}
+  .box {fill:var(--card);stroke:var(--line);stroke-width:1.5}
+  .wire{stroke:var(--line);stroke-width:2;stroke-linecap:round}
+
+  .box.live{animation:lit 7.0s linear infinite}
+  @keyframes lit{0%,4%{stroke:var(--line)}9%,19%{stroke:var(--green)}25%,100%{stroke:var(--line)}}
+  .lbl.live{animation:txt 7.0s linear infinite}
+  @keyframes txt{0%,4%{fill:var(--muted)}9%,19%{fill:var(--green)}25%,100%{fill:var(--muted)}}
+
+  .packet{animation:fly 7.0s cubic-bezier(.45,.05,.55,.95) infinite}
+  @keyframes fly{
+    0%{transform:translateX(0);opacity:0}
+    4%{opacity:1}
+    62%{transform:translateX(872px);opacity:1}
+    69%,100%{transform:translateX(872px);opacity:0}
+  }
+
+  .pod{fill:var(--green);stroke:var(--line);stroke-width:1.5;fill-opacity:.10;
+        animation:land 7.0s linear infinite}
+  @keyframes land{
+    0%,63%{fill-opacity:.10;stroke:var(--line)}
+    68%,88%{fill-opacity:.80;stroke:var(--green)}
+    94%,100%{fill-opacity:.10;stroke:var(--line)}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .box.live,.lbl.live,.packet,.pod{animation:none}
+    .packet{opacity:0}
+    .pod{fill-opacity:.8;stroke:var(--green)}
+  }
+</style>
+<defs><pattern id="pg" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="var(--grid)" stroke-width="1"/></pattern><clipPath id="pc"><rect x="1" y="1" width="1198" height="148" rx="18"/></clipPath></defs>
+<rect x="1" y="1" width="1198" height="148" rx="18" fill="var(--bg)"/>
+<rect clip-path="url(#pc)" x="1" y="1" width="1198" height="148" fill="url(#pg)"/>
+<rect x="1" y="1" width="1198" height="148" rx="18" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+<line class="wire" x1="192" y1="75" x2="244" y2="75"/>
+<line class="wire" x1="372" y1="75" x2="424" y2="75"/>
+<line class="wire" x1="552" y1="75" x2="604" y2="75"/>
+<line class="wire" x1="732" y1="75" x2="790" y2="75"/>
+<rect class="box live" x="64" y="54" width="128" height="42" rx="9" style="animation-delay:0.00s"/>
+<text class="stg lbl live" x="128" y="79.5" text-anchor="middle" style="animation-delay:0.00s">commit</text>
+<rect class="box live" x="244" y="54" width="128" height="42" rx="9" style="animation-delay:1.19s"/>
+<text class="stg lbl live" x="308" y="79.5" text-anchor="middle" style="animation-delay:1.19s">build</text>
+<rect class="box live" x="424" y="54" width="128" height="42" rx="9" style="animation-delay:2.38s"/>
+<text class="stg lbl live" x="488" y="79.5" text-anchor="middle" style="animation-delay:2.38s">test</text>
+<rect class="box live" x="604" y="54" width="128" height="42" rx="9" style="animation-delay:3.57s"/>
+<text class="stg lbl live" x="668" y="79.5" text-anchor="middle" style="animation-delay:3.57s">deploy</text>
+<rect x="790" y="37" width="346" height="76" rx="11" fill="var(--card)" stroke="var(--line)" stroke-width="1.5"/>
+<rect class="pod" x="812" y="48" width="26" height="26" rx="7" style="animation-delay:0.00s"/>
+<rect class="pod" x="846" y="48" width="26" height="26" rx="7" style="animation-delay:0.05s"/>
+<rect class="pod" x="880" y="48" width="26" height="26" rx="7" style="animation-delay:0.10s"/>
+<rect class="pod" x="914" y="48" width="26" height="26" rx="7" style="animation-delay:0.15s"/>
+<rect class="pod" x="948" y="48" width="26" height="26" rx="7" style="animation-delay:0.20s"/>
+<rect class="pod" x="982" y="48" width="26" height="26" rx="7" style="animation-delay:0.25s"/>
+<rect class="pod" x="812" y="80" width="26" height="26" rx="7" style="animation-delay:0.30s"/>
+<rect class="pod" x="846" y="80" width="26" height="26" rx="7" style="animation-delay:0.35s"/>
+<rect class="pod" x="880" y="80" width="26" height="26" rx="7" style="animation-delay:0.40s"/>
+<rect class="pod" x="914" y="80" width="26" height="26" rx="7" style="animation-delay:0.45s"/>
+<rect class="pod" x="948" y="80" width="26" height="26" rx="7" style="animation-delay:0.50s"/>
+<rect class="pod" x="982" y="80" width="26" height="26" rx="7" style="animation-delay:0.55s"/>
+<text class="cap" x="1026" y="79">production</text>
+<g class="packet"><circle cx="128" cy="75" r="5" fill="var(--blue)"/></g>
+</svg>
