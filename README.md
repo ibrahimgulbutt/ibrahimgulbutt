@@ -1,4 +1,4 @@
-<img src="assets/hero.svg" alt="Ibrahim Gul Butt — Site Reliability / DevOps, Lahore, Pakistan" width="100%">
+<img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/hero.svg" alt="Ibrahim Gul Butt — Site Reliability / DevOps, Lahore, Pakistan" width="100%">
 
 ### What I actually do
 
@@ -12,7 +12,7 @@ a Mermaid editor that is one HTML file. I build the thing when the thing should 
 
 Final year of Software Engineering at FAST-NUCES. Graduating December 2026.
 
-<img src="assets/stack.svg" alt="Stack: platform, delivery, reliability, application" width="100%">
+<img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/stack.svg" alt="Stack: platform, delivery, reliability, application" width="100%">
 
 ### Things I've built
 
@@ -41,7 +41,7 @@ small because someone sat down and made them small. Alerts that earn the 3 a.m. 
 
 Most of what's here is meant to be cloned and run, not admired — if a README claims a number,
 there is a command underneath it that produces the number. That includes this page: the header
-above is a hand-written SVG in [`assets/`](assets), built by [`tools/build.py`](tools/build.py),
+above is a hand-written SVG in [`assets/`](https://github.com/ibrahimgulbutt/ibrahimgulbutt/blob/main/assets), built by [`tools/build.py`](https://github.com/ibrahimgulbutt/ibrahimgulbutt/blob/main/tools/build.py),
 theme-aware, motion-reduced when you ask it to be, and dependent on exactly zero third-party
 services that could rate-limit it into a broken image.
 
