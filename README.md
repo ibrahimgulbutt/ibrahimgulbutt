@@ -16,6 +16,10 @@ and the pager. The rest of this page is the other half.
 
 Final year of Software Engineering at FAST-NUCES, Lahore. Graduating December 2026.
 
+<img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/dashboard.svg"
+     alt="Live activity dashboard: contributions per week, commits, repositories, streak and language mix"
+     width="100%">
+
 <img src="https://raw.githubusercontent.com/ibrahimgulbutt/ibrahimgulbutt/main/assets/stack.svg" alt="Stack by domain: mobile, web, backend, platform, reliability, systems and ML" width="100%">
 
 ## Mobile

@@ -1,0 +1,50 @@
+name: refresh dashboard
+
+# Keeps assets/dashboard.svg in step with reality. Everything it needs is in the
+# Python standard library, so there is no dependency install and nothing to pin.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"      # daily, 04:17 UTC
+  workflow_dispatch:           # and on demand from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "tools/**"
+      - ".github/workflows/refresh.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-dashboard
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate the dashboard
+        env:
+          # Swap for a PAT with read:user if you ever want private contributions
+          # counted; GITHUB_TOKEN only sees public activity.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/dashboard.py --user ${{ github.repository_owner }}
+
+      - name: Commit if the numbers moved
+        run: |
+          if git diff --quiet -- assets/dashboard.svg; then
+            echo "no change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/dashboard.svg
+          git commit -m "chore: refresh dashboard [skip ci]"
+          git push
