@@ -79,7 +79,7 @@
 <rect class="card" x="896" y="70" width="274" height="98" rx="12"/>
 <rect x="896" y="70" width="3" height="98" rx="1.5" fill="var(--amber)"/>
 <text class="k" x="914" y="96">CURRENT STREAK</text>
-<text class="n" x="914" y="134">4d</text>
+<text class="n" x="914" y="134">0d</text>
 <text class="s" x="914" y="154">consecutive days</text>
 <rect class="card" x="30" y="196" width="840" height="150" rx="12"/>
 <text class="k" x="48" y="220">CONTRIBUTIONS PER WEEK</text>
@@ -119,5 +119,5 @@
 <text class="lb" x="912" y="329">Kotlin</text>
 <rect class="bar" x="986" y="320" width="15" height="11" rx="3" fill="var(--violet)" fill-opacity=".85" style="animation-delay:0.96s"/>
 <text class="lc" x="1156" y="329" text-anchor="end">1</text>
-<text class="ax" x="30" y="416">generated 2026-08-12 05:48 UTC by tools/dashboard.py</text>
+<text class="ax" x="30" y="416">generated 2026-08-13 05:50 UTC by tools/dashboard.py</text>
 </svg>
