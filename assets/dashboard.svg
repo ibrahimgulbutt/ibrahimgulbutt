@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="dt dd">
 <title id="dt">Live activity dashboard for ibrahimgulbutt</title>
-<desc id="dd">371 contributions in the last year across 17 repositories, refreshed daily.</desc>
+<desc id="dd">365 contributions in the last year across 16 repositories, refreshed daily.</desc>
 <style>
   :root{
     --bg:#f6f8fa; --border:#d8dee4; --grid:#e9edf1; --card:#ffffff; --sunk:#eef1f4;
@@ -64,13 +64,13 @@
 <rect class="card" x="30" y="70" width="274" height="98" rx="12"/>
 <rect x="30" y="70" width="3" height="98" rx="1.5" fill="var(--green)"/>
 <text class="k" x="48" y="96">CONTRIBUTIONS</text>
-<text class="n" x="48" y="134">371</text>
+<text class="n" x="48" y="134">365</text>
 <text class="s" x="48" y="154">last 365 days</text>
 <rect class="card" x="318" y="70" width="274" height="98" rx="12"/>
 <rect x="318" y="70" width="3" height="98" rx="1.5" fill="var(--blue)"/>
 <text class="k" x="336" y="96">COMMITS</text>
-<text class="n" x="336" y="134">356</text>
-<text class="s" x="336" y="154">across 17 repos</text>
+<text class="n" x="336" y="134">350</text>
+<text class="s" x="336" y="154">across 16 repos</text>
 <rect class="card" x="607" y="70" width="274" height="98" rx="12"/>
 <rect x="607" y="70" width="3" height="98" rx="1.5" fill="var(--violet)"/>
 <text class="k" x="625" y="96">REPOSITORIES</text>
@@ -119,5 +119,5 @@
 <text class="lb" x="912" y="329">Kotlin</text>
 <rect class="bar" x="986" y="320" width="15" height="11" rx="3" fill="var(--violet)" fill-opacity=".85" style="animation-delay:0.96s"/>
 <text class="lc" x="1156" y="329" text-anchor="end">1</text>
-<text class="ax" x="30" y="416">generated 2026-08-16 04:51 UTC by tools/dashboard.py</text>
+<text class="ax" x="30" y="416">generated 2026-08-17 05:00 UTC by tools/dashboard.py</text>
 </svg>
